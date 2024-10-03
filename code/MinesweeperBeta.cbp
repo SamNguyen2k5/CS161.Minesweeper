@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="MinesweeperBeta" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/MinesweeperBeta" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++14" />
+					<Add option="-g" />
+					<Add directory="SFML-2.5.1/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-O2" />
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-static" />
+					<Add library="sfml-graphics-d" />
+					<Add library="sfml-window-d" />
+					<Add library="sfml-system-d" />
+					<Add directory="SFML-2.5.1/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/MinesweeperBeta" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++14" />
+					<Add option="-std=c++14 -pipe -O2 -s -static -lm -x c++ -DTHEMIS -Wl,-z,stack-size=266060288" />
+					<Add option="-DSFML_STATIC" />
+					<Add directory="SFML-2.5.1/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-O2" />
+					<Add option="-s" />
+					<Add option="-static-libstdc++" />
+					<Add option="-static-libgcc" />
+					<Add option="-static" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+					<Add library="opengl32" />
+					<Add library="winmm" />
+					<Add library="gdi32" />
+					<Add directory="SFML-2.5.1/lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++14" />
+			<Add option="-std=c++14 -pipe -O2 -s -static -lm -x c++ -DTHEMIS -Wl,-z,stack-size=266060288" />
+			<Add option="-DSFML_STATIC" />
+			<Add directory="SFML-2.5.1/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-O2" />
+			<Add option="-static-libstdc++" />
+			<Add option="-static-libgcc" />
+			<Add option="-static" />
+			<Add library="mingw32" />
+			<Add library="user32" />
+			<Add library="gdi32" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add directory="SFML-2.5.1/lib" />
+		</Linker>
+		<Unit filename="application-states.cpp" />
+		<Unit filename="application.cpp" />
+		<Unit filename="application.hpp" />
+		<Unit filename="assets/fonts/ModernDOS8x14.ttf" />
+		<Unit filename="assets/images/bomb.png" />
+		<Unit filename="cb.bmp" />
+		<Unit filename="context-reader.cpp" />
+		<Unit filename="context.cpp" />
+		<Unit filename="context.hpp" />
+		<Unit filename="gametimer.cpp" />
+		<Unit filename="gametimer.hpp" />
+		<Unit filename="interfaces-button.cpp" />
+		<Unit filename="interfaces.hpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="minefield-blank.cpp" />
+		<Unit filename="minefield-cell.cpp" />
+		<Unit filename="minefield-random.cpp" />
+		<Unit filename="minefield-score.cpp" />
+		<Unit filename="minefield.cpp" />
+		<Unit filename="minefield.hpp" />
+		<Unit filename="screen-game-lose-sidepanel.cpp" />
+		<Unit filename="screen-game-lose.cpp" />
+		<Unit filename="screen-game-sidepanel.cpp" />
+		<Unit filename="screen-game-win-sidepanel.cpp" />
+		<Unit filename="screen-game-win.cpp" />
+		<Unit filename="screen-game.cpp" />
+		<Unit filename="screen-home-sidepanel.cpp" />
+		<Unit filename="screen-home.cpp" />
+		<Unit filename="screen-settings-sidepanel.cpp" />
+		<Unit filename="screen-settings.cpp" />
+		<Unit filename="screen.cpp" />
+		<Unit filename="screen.hpp" />
+		<Unit filename="sidepanel.hpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
